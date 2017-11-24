@@ -61,7 +61,7 @@ h6 {
 p {
     margin-bottom: 20px;
     font-family: 'Slabo 27px', roboto, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -70,8 +70,12 @@ p {
 }
 
 
-.text-about {
+.text-about, .text-about a, .text-about a:hover {
     color: #fff;
+}
+
+.text-about a {
+    text-decoration: underline;
 }
 
 section {
@@ -233,11 +237,11 @@ aside {
 .project i.fa-close {
     align-self: flex-end;
     cursor: pointer;
-    position: fixed;
-    top: 0px;
+    position: absolute;
+    top: 10px;
     width: 40px;
     height: 40px;
-    right: 0px;
+    right: 0;
     color: #aad9c0;
     padding: 5px 10px;
     background: #fff;
@@ -245,6 +249,10 @@ aside {
 
 .project p {
     padding: 20px;
+}
+
+.project button {
+    margin-bottom: 30px;
 }
 
 .link {
@@ -351,7 +359,7 @@ header .header-content .header-content-inner p {
 
 .section-heading {
     font-family: 'Baloo Tamma', cursive;
-    font-size: 28px;
+    font-size: 32px;
     color: rgb(120,120,120);
     margin-top: 0;
 }
@@ -371,11 +379,16 @@ header .header-content .header-content-inner p {
     margin-bottom: 0;
 }
 
+#portfolio img {
+    width: 100%;
+    max-width: auto;
+}
+
 .portfolio-box {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 650px;
+    /*max-width: 650px;*/
 }
 
 .portfolio-box .portfolio-box-caption {
