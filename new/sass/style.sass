@@ -1,0 +1,48 @@
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+	transition: all ease 0.3s
+	text-decoration: none
+	border: none
+	outline: none
+html, body
+	width: 100%
+	height: 100%
+	font-family: 'Slabo 27px', roboto, sans-serif
+	font-size: 10px
+h1
+	font-family: 'Abril Fatface', cursive
+	font-size: 8rem
+	font-weight: 300
+	color: white
+	line-height: 1
+nav
+	position: fixed
+	top: 0
+	left: 0
+	height: 100vh
+	width: 25%
+	padding: 20px
+	background: turquoise
+main
+	position: absolute
+	top: 0
+	left: 25%
+	width: 75%
+	min-height: 100vh
+	.row
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		a
+			display: block
+			width: 50%
+			&:nth-child(odd)
+				background: black
+			&:nth-child(even)
+				background: blue
+			img
+				display: block
+				width: 100%
+
