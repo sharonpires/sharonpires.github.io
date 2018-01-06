@@ -7,32 +7,17 @@ head
 	link(href="https://fonts.googleapis.com/css?family=Abril+Fatface|Slabo+27px", rel="stylesheet")
 	link(type="text/css", href="css/style.css", rel="stylesheet")
 body
-	nav
-		h1 Sharon Pires
-		p Olá, me chamo Sharon Pires. 
-			br
-			| Sou designer no 
-			a(href="http://estudioquadrilatero.com") Estúdio Quadrilátero 
-			| em Campinas - SP. Nos útimos anos, tenho trabalhado com design gráfico, visual, ilustrações, letras e fotografia, criando novas experiências por meio de projetos simples e belos de design.
-		.filter
-			p Você está vendo trabalhos de:
-			button#design Design
-			button#pattern
-			button#visual
-		.contact
-			p
-				a(href="mailto:hi@sharonpires.com") hi@sharonpires.com
-			a(href="#") insta
+	include templates/nav.pug
 	main
 		.grid
-			a(href="#")
+			a(href="cactus/")
 				div(data-title="Cactus")
 					img(src="../img/portfolio/cactus.jpg", alt="")
 			a(href="#")
-				div(data-title="Cactus")
+				div(data-title="Find Truck")
 					img(src="../img/portfolio/findtruck.jpg", alt="")
 			a(href="#")
-				div(data-title="Cactus")
+				div(data-title="Coletrânea")
 					img(src="../img/portfolio/elpaso.jpg", alt="")
 			a(href="#")
 				div(data-title="Cactus")
