@@ -1,9 +1,9 @@
-u(".filter button").on("click", function(){
+u(".filter a").on("click", function(){
 	var id = u(this).attr('id');
 	if(u(this).hasClass("filter_active")) {
 	} 
 	else if (id === "all"){
-		u(".filter button").removeClass("filter_active");
+		u(".filter a").removeClass("filter_active");
 		u(this).addClass('filter_active');
 		u('.item').addClass('fadeout');
 		setTimeout(function(){
@@ -14,7 +14,7 @@ u(".filter button").on("click", function(){
 		}, 400);
 	}
 	else {
-		u(".filter button").removeClass("filter_active");
+		u(".filter a").removeClass("filter_active");
 		u(this).addClass('filter_active');
 		u('.item').addClass('fadeout');
 		setTimeout(function(){

@@ -5,15 +5,15 @@ head
 	meta(charset="UTF-8")
 	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 	title Sharon Pires
-	link(href="https://fonts.googleapis.com/css?family=Abril+Fatface|Slabo+27px", rel="stylesheet")
+	link(href="https://fonts.googleapis.com/css?family=Abril+Fatface|Slabo+27px|Inconsolata", rel="stylesheet")
 	link(type="text/css", href="css/style.css", rel="stylesheet")
 body
 	include templates/nav.pug
 	main
 		.grid
 			mixin item(url, title, category)
-				a.item(data-title=title, href= url+"/", data-category=category)
-					div
+				a.item(href= url+"/", data-category=category)
+					div(data-title=title)
 						img(src="../../img/portfolio/"+url+".jpg", alt=title)
 			+item('ampersand', 'Ampersand', 'design')
 			+item('baiao', 'Baião Florido', 'lettering')
