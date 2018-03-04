@@ -21,10 +21,10 @@ u(".filter a").on("click", function(){
 			u('.item').addClass('hide');
 		}, 300);
 		setTimeout(function(){
-			u(".item[data-category="+id+"]").removeClass('hide');
+			u(".item."+id).removeClass('hide');
 		}, 350);
 		setTimeout(function(){
-			u(".item[data-category="+id+"]").removeClass('fadeout');
+			u(".item."+id).removeClass('fadeout');
 		}, 400);
 	}
 });
