@@ -6,42 +6,41 @@
   <title>Sharon Pires</title>
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Slabo+27px" rel="stylesheet"/>
   <link type="text/css" href="css/style.css" rel="stylesheet"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <title>Sharon Pires</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"/>
+  <link type="text/css" href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
   <nav>
     <h1>Sharon Pires</h1>
-    <p>Olá, me chamo Sharon Pires. <br/>Sou designer no <a href="http://estudioquadrilatero.com">Estúdio Quadrilátero </a>em Campinas - SP. Nos útimos anos, tenho trabalhado com design gráfico, visual, ilustrações, letras e fotografia, criando novas experiências por meio de projetos simples e belos de design.
-      <p>O que você quer ver?</p>
-    </p>
+    <p>Hi there, Sharon here. <br/>I'm a Designer based in Campinas|Brazil. <br/>Currently working at <a href="http://estudioquadrilatero.com">Estúdio Quadrilátero</a> and at <a href="http://meltdesign.com.br">Melt Design</a>.</p>
     <div class="filter">
-      <button id="design"> 
-        <p>Design</p>
-      </button>
-      <button class="filter_active" id="pattern"> 
-        <p>Pattern</p>
-      </button>
-      <button class="filter_active" id="illustration"> 
-        <p>Illustration</p>
-      </button>
-      <button class="filter_active" id="lettering"> 
-        <p>Lettering</p>
-      </button>
+      <div> <a class="filter_active" id="all">All</a></div>
+      <div><a id="illustration">Illustration</a></div>
+      <div> <a id="design">Design</a></div>
+      <div> <a id="pattern">Pattern</a></div>
+      <div> <a id="lettering">Lettering</a></div>
     </div>
     <div class="contact"><a target="_blank" href="mailto:hi@sharonpires.com">hi@sharonpires.com</a><a target="_blank" href="http://instagram.com/shacombiscoito">instagram</a><a target="_blank" href="http://dribbble.com/sharonpires">dribbble</a><br/><span href="javascript:">Copyright 2018</span></div>
   </nav>
   <main>
-    <div class="grid"><a href="cactus/">
-        <div data-title="Cactus"><img src="../img/portfolio/cactus.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Find Truck"><img src="../img/portfolio/findtruck.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Coletrânea"><img src="../img/portfolio/elpaso.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Cactus"><img src="../img/portfolio/launcher.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Cactus"><img src="../img/portfolio/cactus.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Cactus"><img src="../img/portfolio/findtruck.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Cactus"><img src="../img/portfolio/elpaso.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Cactus"><img src="../img/portfolio/launcher.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Cactus"><img src="../img/portfolio/cactus.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Cactus"><img src="../img/portfolio/findtruck.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Cactus"><img src="../img/portfolio/elpaso.jpg" alt=""/></div></a><a href="#">
-        <div data-title="Cactus"><img src="../img/portfolio/launcher.jpg" alt=""/></div></a></div>
+    <div class="grid"><a class="item design pattern" href="maria/">
+              <div data-title="maria"><img src="../../img/portfolio/maria.jpg" alt="maria"/></div></a><a class="item illustration lettering" href="warrior/">
+              <div data-title="warrior"><img src="../../img/portfolio/warrior.jpg" alt="warrior"/></div></a><a class="item illustation pattern" href="quatinguele/">
+              <div data-title="quatinguelê"><img src="../../img/portfolio/quatinguele.jpg" alt="quatinguelê"/></div></a><a class="item pattern illustration" href="rainbunny/">
+              <div data-title="rainbunny"><img src="../../img/portfolio/rainbunny.jpg" alt="rainbunny"/></div></a><a class="item illustation" href="picnic/">
+              <div data-title="picnic"><img src="../../img/portfolio/picnic.jpg" alt="picnic"/></div></a><a class="item pattern illustration" href="lemon/">
+              <div data-title="lemon"><img src="../../img/portfolio/lemon.jpg" alt="lemon"/></div></a><a class="item lettering design" href="baiao/">
+              <div data-title="floral baião"><img src="../../img/portfolio/baiao.jpg" alt="floral baião"/></div></a><a class="item illustration design" href="dinos/">
+              <div data-title="dinos"><img src="../../img/portfolio/dinos.jpg" alt="dinos"/></div></a><a class="item illustration design" href="cactus/">
+              <div data-title="cactus"><img src="../../img/portfolio/cactus.jpg" alt="cactus"/></div></a><a class="item lettering" href="letters/">
+              <div data-title="letters"><img src="../../img/portfolio/letters.jpg" alt="letters"/></div></a><a class="item design" href="naestrada/">
+              <div data-title="na estrada - food truck"><img src="../../img/portfolio/naestrada.jpg" alt="na estrada - food truck"/></div></a><a class="item illustration" href="somostodasbelas/">
+              <div data-title="somos todas belas"><img src="../../img/portfolio/somostodasbelas.jpg" alt="somos todas belas"/></div></a>
+    </div>
   </main>
+  <script type="text/javascript" src="js/umbrella.min.js"></script>
+  <script type="text/javascript" src="js/filter.js"></script>
 </body>
