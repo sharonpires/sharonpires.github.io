@@ -43,10 +43,7 @@ nav
 	a
 		color: inherit
 		text-decoration: underline
-	.filter
-		// display: flex
-		// flex-wrap: wrap
-		// justify-content: space-between
+	.filter, .back
 		margin-top: 40px
 		div
 			padding: 10px 0px
@@ -76,22 +73,35 @@ nav
 					position: absolute
 					left: 0
 					top: 0px
-	.contact
+	.back div a
+		padding-left: 20px
+		&:hover
+			padding-left: 20px
+	.back div a:after
+		content: "←"
+		color: #404040
+		font-size: 1.8rem
 		position: absolute
-		bottom: 0
 		left: 0
-		width: 100%
-		padding: 20px
-		a, span
-			text-decoration: none
-			margin-top: 8px
-			display: block
-			color: #aaa
-			font-size: 1.2em
-			text-transform: uppercase
-			letter-spacing: 2px
-		a:hover
-			color: #404040
+		top: 0px
+.contact
+	position: fixed
+	bottom: 0
+	left: 0
+	width: 100%
+	padding: 20px
+	a, span
+		text-decoration: none
+		margin-top: 8px
+		display: block
+		color: #aaa
+		font-size: 1.2em
+		text-transform: uppercase
+		letter-spacing: 2px
+	a:hover
+		color: #404040
+	span
+		margin-top: 20px
 main
 	position: absolute
 	top: 0
@@ -141,7 +151,6 @@ main
 	opacity: 0
 .hide
 	display: none !important
-
 .projects
 	padding-right: 15px
 	img
@@ -157,3 +166,54 @@ main
 		a
 			text-decoration: underline
 			color: inherit
+@media (max-width: 1200px)
+	main .grid > a
+		width: 50%
+@media (max-width: 940px)
+	main .grid > a
+		width: 100%
+@media (max-width: 768px)
+	.filter
+		display: none
+	nav ~ .projects
+		.filter
+			display: block
+	nav
+		position: initial
+		width: initial
+		height: initial
+	.internal
+		padding: 10px 20px
+		> *
+			display: none
+		.back
+			display: block
+			margin: 0
+	// .projects + .contact
+	// 	display: none
+	main
+		position: initial
+		width: initial
+		padding-bottom: 90px
+		.grid>a div:after
+			opacity: 1
+			bottom: 20px
+			top: auto
+			height: 60px
+	.projects
+		min-height: initial
+		padding: 20px 20px 90px 20px
+		p
+			width: initial
+			margin-left: 0
+	.contact
+		background: #fff
+		text-align: center
+		border-top: 1px solid #eee
+		a
+			display: initial
+			margin: 0px 10px
+			&:first-child
+				margin-left: 0px
+			&:last-child
+				margin-right: 0px
